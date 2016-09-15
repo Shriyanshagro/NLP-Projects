@@ -1,0 +1,36 @@
+regex used for splitting -
+" "
+' ?:[ -]'
+'\,'
+'\.* '
+'\\n'
+'!'
+'\?'
+'\)'
+'-'
+'\('
+'!'
+';'
+'\['
+'\]'
+'\"'
+'/'
+
+
+Challenges -
+
+1. Wheather to use '@' as separater, as it could be used to identify Nouns, So I haven't use it as separater.
+
+2. How to keep intact URLs, without get it separated through ':',"/",'.', so for this I have used a regex, in each of these separators.
+
+3. In some cases urls are incomplete and ended with multi-dots("...."), so to remove multi-dots I have again used regex '\.* ', to keep intact Urls as much as possible.
+
+4. Emotions are used at many places with different special characters, such as ":-)" and \xe2\x9d\xa4\xef\xb8\x8f,
+ so I removed ':-)' kind of characters as they are not special signs(:-)) while kept other kind as they are special signs(❤️).
+
+5. I have removed all punctuations, excluding apostrophe as it also tokenized words like "I'm" or "don't".
+
+6. Wheather to use '#' as separater, as it could be used to signify type of label or metadata tag used on social network and microblogging services
+    which makes it easier for users to find messages with a specific theme or content, So I haven't use it as separater.
+
+7. As while tokenising, the last word of sentences contain '\n', so I have removed this from words.
