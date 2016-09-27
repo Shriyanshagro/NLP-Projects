@@ -1,0 +1,6 @@
+Assignment [2] : Prepare a set of sentences which are word & sentence tokenized (use the tokeniser you have developed). Format your sentences with sentence open & sentence close tags (<s>, </s>). Now, for any given word/token can you estimate, whether that is the sentence-ending token. ?
+    a) Try to do this task for all n<=6. Which 'n' is better ?
+    b) Plot the curve of rank vs frequency for unigram.
+     c) Plot also the curve of rank vs frequency for all Xs in P(X | </s>)
+     d) From your n-gram models for all 1<n<=6. Generate sentences .
+    
